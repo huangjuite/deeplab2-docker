@@ -7,6 +7,8 @@ docker run \
     -v "$XAUTH:$XAUTH" \
     -v "/home/$USER/Desktop/BMTT2021T3:/root/BMTT2021T3" \
     -v "/home/$USER/BMTT2021-Scripts:/root/BMTT2021-Scripts" \
+    -v "/home/$USER/deeplab2-docker/ViP-DeepLab:/root/bmtt-deeplab2/ViP-DeepLab" \
+    -v "/media/$USER/My Passport/deeplab:/root/bmtt-deeplab2/deeplab2/dataset" \
     --name deeplab2 \
     --network host \
     --privileged \
